@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-const style = {
-    border: 'ipx solid black',
-    borderRadus:'30px',
-    backgroundColor:'rgba (20, 20, 20, 0.8)',
-    padding: '10px'
+export const style = {
+    border: '1px solid black',
+    borderRadius:'30px',
+    backgroundColor:'rgba (255, 255, 255, 0.1)',
+    padding: '30px'
 }
 const proxyurl = "https://cors-anywhere.herokuapp.com/"; // без proxy url нет доступа
 const url = "http://gd.geobytes.com/GetCityDetails";
@@ -26,12 +26,12 @@ const fetchInf = async ( infUpdate) => {
 }
 const Information = ()=> {
     const [ state, setState ] = useState({
-        IP: undefined, 
-        country:undefined,
-        city:undefined,
-        lon:undefined,
-        lat:undefined,
-        timezone:undefined,
+        IP: 'Fetching...', 
+        country:'Fetching...',
+        city:'Fetching...',
+        lon:'Fetching...',
+        lat:'Fetching...',
+        timezone:'Fetching...',
     })
     useEffect(() => {
         fetchInf(setState)
