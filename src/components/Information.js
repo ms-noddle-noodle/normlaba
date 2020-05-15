@@ -43,7 +43,7 @@ const Information = ()=> {
         Cтрана: {state.country}<br />
         Город: {state.city}<br />
         Долгота:  {state.lon}<br />
-        Широта: {state. lat}<br />
+        Широта: {state.lat}<br />
         Часовой пояс: {state.timezone}<br />
         </div>
     </div>
