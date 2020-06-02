@@ -16,7 +16,7 @@
     "start": "node server.js",
     "build": "./node_modules/.bin/webpack --mode=production",
     "test": "react-scripts test",
-    "lint": "eslint ./src/components/*.{js,jsx} --fix",
+    "lint": "./node_modules/.bin/eslint ./src/components/*.{js,jsx} --fix",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,7 +39,7 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
